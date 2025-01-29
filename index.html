@@ -37,9 +37,9 @@
             <form class="d-flex" role="form" id="SearchForm" onkeydown="if(event.keyCode === 13){handleSubmit();return false;}">
                 <input class="form-control" id="searchVal" type="text" placeholder="Search" aria-label="Search" style="margin-left: 5%; border-color: black;">
                 <button type="button" Value="Search" onclick="handleSubmit(1,1)">Search</button>
-                <div style="min-width: 5%;"></div>
+                <div id="Spacer"></div>
             </form>
-               
+
             <button id="prevButton" disabled onclick="movePage(-1)">Previous</button>
             <button id="nextButton" onclick="movePage(1)">Next</button>
         </div>
