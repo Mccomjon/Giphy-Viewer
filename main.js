@@ -8,9 +8,8 @@ function handleSubmit(x = 1, y = 0) {
     }
     //Variable Declarations
     let searchVal = document.getElementById('searchVal');
-    let pagenumber = x;
     let search = searchVal.value;
-    console.log(search);
+    let pagenumber = x;
     let offset = (pagenumber-1)*limit;
     let url = `http://api.giphy.com/v1/gifs/search?q=${search}&api_key=cqGXYwt8ZYFAOolvYC8V5lzy6VJzZ96J&limit=${limit}&offset=${offset}`;
     // Resets all 6 Columns to default
